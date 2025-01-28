@@ -1,3 +1,10 @@
+
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
 .square {
     height: 50px;
     width: 50px;
@@ -6,7 +13,26 @@
     /*background-color: #3b82f6;*/
     border: 3px solid #3B82f6;
 }
-img {
-    height: 100%;
-    width: 100%;
+
+/* TODO make the header move with screen */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em  5em;
+    flex-wrap: wrap;
+    /*background-color: #1f2937;*/
+
+}
+
+/* TODO hide links in smaller screen */
+.section-header .link {
+    display: flex;
+    gap: 1em;
+    min-width: 20em;
+}
+
+.section-header .link > a {
+    color: #6d747d;
+    text-decoration: none;
+    font-family: sans-serif;
 }
