@@ -1,17 +1,35 @@
 
 
 img {
-    height: 100%;
-    width: 100%;
+    width: 43%;
 }
 
+button {
+    height: 30px;
+    width: auto;
+    align-self: center;
+    /*text-align: middle;*/
+    /*padding: 9px;*/
+    background-color: #3c82f6;
+    border-radius: 7px;
+    /*border-style: 0 solid;*/
+    border: none;
+    padding: 0 25px;
+    color: white;
+    flex: 0 0 auto;
+}
+
+/* TODO make the square adaptive to screen size */
 .square {
-    height: 50px;
-    width: 50px;
+    height: 5em;
+    width: 5em;
     /*border-width: thin;*/
     /*border-color: #3B82F6;*/
     /*background-color: #3b82f6;*/
     border: 3px solid #3B82f6;
+    /*align-items: center;*/
+    /*align-self: center;*/
+    border-radius: 10px;
 }
 
 /* TODO make the header move with screen */
@@ -36,3 +54,56 @@ img {
     text-decoration: none;
     font-family: sans-serif;
 }
+
+.title {
+    display: flex;
+    margin: 0em 5em
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.info .temp {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-evenly;*/
+    margin: 0 5em;
+    flex: 1 1 auto;
+    align-content: center;
+    /*flex: 1 1 auto; */
+}
+
+.item {
+    /*justify-items: center;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100px;
+}
+
+.item p {
+    text-align: center;
+}
+
+/*.item .square {*/
+/*    align-items: center;*/
+/*}*/
+
+.quote {
+    display: block;
+    margin: 5em;
+}
+
+.quote #author {
+    text-align: end;
+    font-weight: bold;
+}
+
+.action {
+    display: flex;
+    justify-content: center;
+    margin: 0 5em;
+}
+
