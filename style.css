@@ -1,0 +1,12 @@
+.square {
+    height: 50px;
+    width: 50px;
+    /*border-width: thin;*/
+    /*border-color: #3B82F6;*/
+    /*background-color: #3b82f6;*/
+    border: 3px solid #3B82f6;
+}
+img {
+    height: 100%;
+    width: 100%;
+}
