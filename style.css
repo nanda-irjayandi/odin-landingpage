@@ -1,4 +1,13 @@
+/*// <uniquifier>: Use a unique and descriptive class name*/
+/*// <weight>: Use a value from 100 to 900*/
 
+/*.roboto-<uniquifier > {*/
+/*    font-family: "Roboto", serif;*/
+/*    font-optical-sizing: auto;*/
+/*    font-weight: < weight >;*/
+/*    font-style: normal;*/
+/*    font-variation-settings: "wdth" 100;*/
+/*}*/
 
 img {
     width: 43%;
@@ -19,6 +28,10 @@ button {
     flex: 0 0 auto;
 }
 
+p {
+    font-family: Roboto, sans-serif;
+}
+
 /* TODO make the square adaptive to screen size */
 .square {
     height: 5em;
@@ -36,10 +49,17 @@ button {
 .section-header {
     display: flex;
     justify-content: space-between;
-    margin: 1em  5em;
+    padding: 1em  5em;
+    /*margin: 0;*/
     flex-wrap: wrap;
-    /*background-color: #1f2937;*/
+    background-color: #1f2937;
+}
 
+/* TODO check the reason why div does not result in usual p behaviour of font control */
+#logo {
+    /*font-size: 24px;*/
+    color: #f9faf8;
+    font: 24px Roboto;
 }
 
 /* TODO hide links in smaller screen */
@@ -49,23 +69,32 @@ button {
     min-width: 20em;
 }
 
-.section-header .link > a {
-    color: #6d747d;
+.section-header .link > a, .left-col p {
+    color: #e5e7eb;
     text-decoration: none;
-    font-family: sans-serif;
+    font: 18px Roboto, sans-serif;
 }
 
 .title {
     display: flex;
-    margin: 0 5em
+    /*margin: 0 5em;*/
+    padding: 2em 5em;
+    background-color: #212936;
+}
+
+.title h1 {
+    font: 900 48px Roboto, sans-serif;
+    color: #f9faf8;
 }
 
 .info {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin: 1em;
+    padding: 3em 0;
 }
-.info .temp {
+.info .temp1 {
     display: flex;
     flex-direction: row;
     /*justify-content: space-evenly;*/
@@ -73,6 +102,7 @@ button {
     flex: 1 1 auto;
     align-content: center;
     /*flex: 1 1 auto; */
+    gap: 20px;
 }
 
 .item {
@@ -80,7 +110,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100px;
+    /*width: 75%;*/
 }
 
 .item p {
@@ -93,17 +123,68 @@ button {
 
 .quote {
     display: block;
-    margin: 5em;
+    height: auto;
+    /*margin: 5em;*/
+    background-color: #E5E7EB;
+    padding: 1em 5em;
+}
+
+.quote:not(#author) {
+    font-style: italic;
+    font-weight: lighter;
+    color: #1f2937;
+
+    font-size: 36px;
 }
 
 .quote #author {
     text-align: end;
     font-weight: bold;
 }
-
+/*36 PX LIGHT ITALIC #1F2937*/
 .action {
     display: flex;
     justify-content: center;
-    margin: 0 5em;
+    margin: 2em 5em;
+    padding: 2em 4em;
+    background-color: #4E80EE;
+    border-radius: 10px;
+    gap: 2em;
 }
 
+.action .left {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*padding: 3em;*/
+    color: white;
+    /*justify-content: 3em;*/
+}
+
+#temp2 {
+    font-weight: bold;
+}
+
+/* TODO insert white outline for the last button */
+.action .button {
+    border: thin solid #ffffff !important;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    background-color: #1f2937;
+    color: #F9FAFB;
+}
+
+/*// <uniquifier>: Use a unique and descriptive class name*/
+/*// <weight>: Use a value from 100 to 900*/
+
+/*.roboto-<uniquifier> {*/
+/*             font-family: "Roboto", serif;*/
+/*             font-optical-sizing: auto;*/
+/*             font-weight: <weight>;*/
+/*             font-style: normal;*/
+/*             font-variation-settings:*/
+/*                     "wdth" 100;*/
+/*         }*/
