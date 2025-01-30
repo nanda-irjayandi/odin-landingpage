@@ -51,12 +51,12 @@ p {
     display: flex;
     justify-content: space-between;
     padding: 1em  5em;
-    width: 100%;
+    width: auto;
     /*margin: 0;*/
     /*flex-wrap: wrap;*/
     background-color: #1f2937;
-    z-index: 10;
-    position: fixed;
+    /*z-index: 10;*/
+    position: sticky;
     top: 0;
     margin-bottom: 40px;
 }
@@ -97,6 +97,10 @@ p {
 
 @media (max-aspect-ratio: 9/16) {
     .title img {
+        display: none;
+    }
+
+    .link a {
         display: none;
     }
 }
@@ -142,6 +146,7 @@ p {
 }
 
 .item .square {
+    max-width: 10vw;
     align-items: center;
     /*width: 80%;*/
     /*height: 80%;*/
@@ -185,6 +190,10 @@ p {
     /*padding: 3em;*/
     color: white;
     /*justify-content: 3em;*/
+}
+
+.action p {
+    margin: 4px;
 }
 
 #temp2 {
