@@ -1,3 +1,7 @@
+/* author's note a lot of the following codes are commented out */
+/* this is intentional as I don't want to trace back git log to see the changes and I can instantly toggle the codes to see its behaviour */
+/* I understand that this isnt the common practice in the professional dev */
+
 /*// <uniquifier>: Use a unique and descriptive class name*/
 /*// <weight>: Use a value from 100 to 900*/
 
@@ -46,7 +50,6 @@ p {
     flex: 1 1 auto;
 }
 
-/* TODO make the header move with screen */
 .section-header {
     display: flex;
     justify-content: space-between;
@@ -58,7 +61,7 @@ p {
     /*z-index: 10;*/
     position: sticky;
     top: 0;
-    margin-bottom: 40px;
+    /*margin-bottom: 40px;*/
 }
 
 /* TODO check the reason why div does not result in usual p behaviour of font control */
@@ -68,13 +71,14 @@ p {
     font: 24px Roboto;
 }
 
-/* TODO hide links in smaller screen */
 .section-header .link {
     display: flex;
     gap: 1em;
     min-width: 20em;
 }
 
+/* I know this is messy but I am just trying to practice this syntax */
+/* I will refactor it later after finishing Javascript */
 .section-header .link > a, .left-col p {
     color: #e5e7eb;
     text-decoration: none;
@@ -129,6 +133,7 @@ p {
     align-content: center;
     /*flex: 1 1 auto; */
     gap: 20px;
+    /*flex-wrap: wrap-reverse;*/
 }
 
 .item {
