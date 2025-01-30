@@ -43,6 +43,7 @@ p {
     /*align-items: center;*/
     /*align-self: center;*/
     border-radius: 10px;
+    flex: 1 1 auto;
 }
 
 /* TODO make the header move with screen */
@@ -85,6 +86,12 @@ p {
 .title h1 {
     font: 900 48px Roboto, sans-serif;
     color: #f9faf8;
+}
+
+@media (max-aspect-ratio: 9/16) {
+    .title img {
+        display: none;
+    }
 }
 
 .info {
