@@ -36,6 +36,8 @@ p {
 .square {
     height: 5em;
     width: 5em;
+    /*width: 5em;*/
+    aspect-ratio: 1;
     /*border-width: thin;*/
     /*border-color: #3B82F6;*/
     /*background-color: #3b82f6;*/
@@ -124,9 +126,12 @@ p {
     text-align: center;
 }
 
-/*.item .square {*/
-/*    align-items: center;*/
-/*}*/
+.item .square {
+    align-items: center;
+    /*width: 80%;*/
+    /*height: 80%;*/
+    /*aspect-ratio: 1;*/
+}
 
 .quote {
     display: block;
